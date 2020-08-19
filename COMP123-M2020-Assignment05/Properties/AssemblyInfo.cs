@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("COMP123-M2020-Assignment05")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This is For the DollarComputers Assignment05")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("COMP123-M2020-Assignment05")]

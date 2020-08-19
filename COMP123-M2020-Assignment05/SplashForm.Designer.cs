@@ -29,32 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.DollarComLabel = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.SplashTimer = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // DollarComLabel
-            // 
-            this.DollarComLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.DollarComLabel.Location = new System.Drawing.Point(157, 158);
-            this.DollarComLabel.Name = "DollarComLabel";
-            this.DollarComLabel.Size = new System.Drawing.Size(480, 84);
-            this.DollarComLabel.TabIndex = 0;
-            this.DollarComLabel.Text = "Dollar Computers";
-            this.DollarComLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // SplashTimer
             // 
             this.SplashTimer.Interval = 3000;
             this.SplashTimer.Tick += new System.EventHandler(this.SplashTimer_Tick);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(145, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(417, 49);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome to Dollar Computers";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(237, 58);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(233, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "We Sell for Less!";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // SplashForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 414);
-            this.Controls.Add(this.DollarComLabel);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(703, 513);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("MS Reference Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(7);
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";
@@ -64,8 +78,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label DollarComLabel;
         private System.Windows.Forms.Timer SplashTimer;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
